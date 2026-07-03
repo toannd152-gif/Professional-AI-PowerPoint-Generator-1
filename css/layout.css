@@ -1,0 +1,264 @@
+/* ============================================================
+   AI PowerPoint Generator
+   layout.css
+   Application Layout
+============================================================ */
+
+/* ============================================================
+   RESET
+============================================================ */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ============================================================
+   ROOT
+============================================================ */
+
+html{
+    width:100%;
+    height:100%;
+    font-size:16px;
+}
+
+body{
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    font-family:var(--font-family);
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+}
+
+#app{
+
+    width:100%;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-rows:
+        var(--header-height)
+        1fr
+        var(--footer-height);
+
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+#header{
+
+    width:100%;
+    height:100%;
+
+}
+
+/* ============================================================
+   MAIN LAYOUT
+============================================================ */
+
+#main-layout{
+
+    width:100%;
+    height:100%;
+
+    display:grid;
+
+    grid-template-columns:
+
+        var(--sidebar-width)
+
+        minmax(0,1fr)
+
+        var(--inspector-width);
+
+    overflow:hidden;
+
+}
+
+/* ============================================================
+   SIDEBAR
+============================================================ */
+
+#sidebar{
+
+    width:100%;
+    height:100%;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+/* ============================================================
+   WORKSPACE
+============================================================ */
+
+#workspace{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+
+}
+
+/* ============================================================
+   WORKSPACE TOOLBAR
+============================================================ */
+
+#workspace-toolbar{
+
+    flex:0 0 auto;
+
+}
+
+/* ============================================================
+   WORKSPACE CONTENT
+============================================================ */
+
+#workspace-content{
+
+    flex:1;
+
+    overflow:auto;
+
+}
+
+/* ============================================================
+   INSPECTOR
+============================================================ */
+
+#inspector{
+
+    width:100%;
+    height:100%;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+/* ============================================================
+   STATUS BAR
+============================================================ */
+
+#statusbar{
+
+    width:100%;
+    height:100%;
+
+}
+
+/* ============================================================
+   ROOT CONTAINERS
+============================================================ */
+
+#modal-root{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:var(--z-modal);
+
+}
+
+#notification-root{
+
+    position:fixed;
+
+    top:0;
+    right:0;
+
+    pointer-events:none;
+
+    z-index:var(--z-toast);
+
+}
+
+#loading-root{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:var(--z-loading);
+
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width:1200px){
+
+    #main-layout{
+
+        grid-template-columns:
+
+            240px
+
+            minmax(0,1fr)
+
+            300px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    #main-layout{
+
+        grid-template-columns:
+
+            var(--sidebar-collapse-width)
+
+            minmax(0,1fr);
+
+    }
+
+    #inspector{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    #main-layout{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+    #sidebar{
+
+        display:none;
+
+    }
+
+}

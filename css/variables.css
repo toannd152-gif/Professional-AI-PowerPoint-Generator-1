@@ -1,0 +1,156 @@
+/* ============================================================
+   AI PowerPoint Generator
+   variables.css
+   Global Design Tokens
+============================================================ */
+
+:root {
+
+    /* ========================================================
+       COLORS
+    ======================================================== */
+
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-light: #dbeafe;
+
+    --color-success: #16a34a;
+    --color-warning: #f59e0b;
+    --color-danger: #dc2626;
+    --color-info: #0891b2;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-background: #f5f7fb;
+    --color-surface: #ffffff;
+
+    --color-border: #d9dee7;
+
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-text-disabled: #9ca3af;
+
+    --color-sidebar: #111827;
+    --color-sidebar-hover: #1f2937;
+    --color-sidebar-active: #2563eb;
+
+    --color-header: #ffffff;
+    --color-footer: #ffffff;
+
+    /* ========================================================
+       TYPOGRAPHY
+    ======================================================== */
+
+    --font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 36px;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.8;
+
+    /* ========================================================
+       SPACING
+    ======================================================== */
+
+    --space-0: 0;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* ========================================================
+       BORDER
+    ======================================================== */
+
+    --border-width: 1px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 18px;
+    --radius-round: 999px;
+
+    /* ========================================================
+       SHADOW
+    ======================================================== */
+
+    --shadow-xs:
+        0 1px 2px rgba(0,0,0,.05);
+
+    --shadow-sm:
+        0 2px 6px rgba(0,0,0,.08);
+
+    --shadow-md:
+        0 6px 18px rgba(0,0,0,.10);
+
+    --shadow-lg:
+        0 12px 30px rgba(0,0,0,.15);
+
+    /* ========================================================
+       TRANSITION
+    ======================================================== */
+
+    --transition-fast: .15s ease;
+    --transition-normal: .25s ease;
+    --transition-slow: .40s ease;
+
+    /* ========================================================
+       Z INDEX
+    ======================================================== */
+
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 500;
+    --z-fixed: 900;
+    --z-modal: 1000;
+    --z-toast: 1200;
+    --z-loading: 2000;
+
+    /* ========================================================
+       LAYOUT
+    ======================================================== */
+
+    --header-height: 64px;
+    --footer-height: 36px;
+
+    --sidebar-width: 280px;
+    --sidebar-collapse-width: 72px;
+
+    --inspector-width: 340px;
+
+    --workspace-padding: 24px;
+
+    /* ========================================================
+       BREAKPOINT
+    ======================================================== */
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1440px;
+
+}

@@ -1,0 +1,337 @@
+/* ============================================================
+   AI PowerPoint Generator
+   app.css
+   Global Application Styles
+============================================================ */
+
+/* ============================================================
+   BASE
+============================================================ */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+svg{
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+============================================================ */
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:var(--font-weight-bold);
+    color:var(--color-text);
+    line-height:var(--line-height-tight);
+}
+
+h1{font-size:var(--font-size-3xl);}
+h2{font-size:var(--font-size-2xl);}
+h3{font-size:var(--font-size-xl);}
+h4{font-size:var(--font-size-lg);}
+h5{font-size:var(--font-size-md);}
+h6{font-size:var(--font-size-sm);}
+
+p{
+    line-height:var(--line-height-normal);
+    color:var(--color-text);
+}
+
+small{
+    font-size:var(--font-size-xs);
+}
+
+/* ============================================================
+   FLEX UTILITIES
+============================================================ */
+
+.flex{display:flex;}
+.inline-flex{display:inline-flex;}
+
+.flex-column{flex-direction:column;}
+.flex-row{flex-direction:row;}
+
+.align-start{align-items:flex-start;}
+.align-center{align-items:center;}
+.align-end{align-items:flex-end;}
+
+.justify-start{justify-content:flex-start;}
+.justify-center{justify-content:center;}
+.justify-end{justify-content:flex-end;}
+.justify-between{justify-content:space-between;}
+.justify-around{justify-content:space-around;}
+
+.flex-wrap{flex-wrap:wrap;}
+.flex-1{flex:1;}
+
+/* ============================================================
+   GRID
+============================================================ */
+
+.grid{
+    display:grid;
+}
+
+.grid-2{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid-4{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.gap-sm{
+    gap:var(--space-2);
+}
+
+.gap-md{
+    gap:var(--space-4);
+}
+
+.gap-lg{
+    gap:var(--space-6);
+}
+
+/* ============================================================
+   SPACING
+============================================================ */
+
+.m-0{margin:0;}
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+
+.p-1{padding:var(--space-1);}
+.p-2{padding:var(--space-2);}
+.p-3{padding:var(--space-3);}
+.p-4{padding:var(--space-4);}
+.p-5{padding:var(--space-5);}
+.p-6{padding:var(--space-6);}
+
+/* ============================================================
+   WIDTH
+============================================================ */
+
+.w-100{
+    width:100%;
+}
+
+.h-100{
+    height:100%;
+}
+
+/* ============================================================
+   TEXT
+============================================================ */
+
+.text-left{text-align:left;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+
+.text-primary{
+    color:var(--color-primary);
+}
+
+.text-success{
+    color:var(--color-success);
+}
+
+.text-warning{
+    color:var(--color-warning);
+}
+
+.text-danger{
+    color:var(--color-danger);
+}
+
+.text-muted{
+    color:var(--color-text-light);
+}
+
+.text-bold{
+    font-weight:700;
+}
+
+.text-semibold{
+    font-weight:600;
+}
+
+/* ============================================================
+   BACKGROUND
+============================================================ */
+
+.bg-white{
+    background:white;
+}
+
+.bg-primary{
+    background:var(--color-primary);
+    color:white;
+}
+
+.bg-surface{
+    background:var(--color-surface);
+}
+
+/* ============================================================
+   BORDER
+============================================================ */
+
+.border{
+    border:1px solid var(--color-border);
+}
+
+.rounded-sm{
+    border-radius:var(--radius-sm);
+}
+
+.rounded{
+    border-radius:var(--radius-md);
+}
+
+.rounded-lg{
+    border-radius:var(--radius-lg);
+}
+
+/* ============================================================
+   SHADOW
+============================================================ */
+
+.shadow-sm{
+    box-shadow:var(--shadow-sm);
+}
+
+.shadow{
+    box-shadow:var(--shadow-md);
+}
+
+.shadow-lg{
+    box-shadow:var(--shadow-lg);
+}
+
+/* ============================================================
+   CURSOR
+============================================================ */
+
+.pointer{
+    cursor:pointer;
+}
+
+.no-select{
+    user-select:none;
+}
+
+/* ============================================================
+   ANIMATION
+============================================================ */
+
+.fade-in{
+
+    animation:fadeIn .25s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.slide-up{
+
+    animation:slideUp .25s ease;
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(16px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width:1200px){
+
+    .grid-4{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .grid-4,
+    .grid-3,
+    .grid-2{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

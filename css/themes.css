@@ -1,0 +1,34 @@
+/* ============================================================
+   AI PowerPoint Generator
+   themes.css — Dark mode
+============================================================ */
+
+[data-theme="dark"]{
+
+    --color-background:#0f172a;
+    --color-surface:#1e293b;
+
+    --color-border:#334155;
+
+    --color-text:#e2e8f0;
+    --color-text-light:#94a3b8;
+    --color-text-disabled:#64748b;
+
+    --color-header:#1e293b;
+    --color-footer:#1e293b;
+
+    --color-sidebar:#020617;
+    --color-sidebar-hover:#1e293b;
+
+    --color-primary-light:#1e3a5f;
+
+}
+
+[data-theme="dark"] .slide-card:hover{
+    box-shadow:0 2px 12px rgba(0,0,0,.5);
+}
+
+[data-theme="dark"] .icon-btn-danger:hover{
+    background:#450a0a;
+    border-color:#7f1d1d;
+}
